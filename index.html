@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shopper App</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body onload="document.getElementById('id01').style.display='block'"
+    style="width:auto;">
+    
+    <div id="id01" class="modal">
+      <form
+        class="modal-content animate"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    
+    <h1 style="text-align:center">
+      Shopper App
+      <br/>
+      <img src="https://cdn.glitch.com/1e4d771b-b13b-456e-bd9b-a44ba2242a62%2FGroceries-PNG-Transparent.png?v=1570569861942" style="width:15%">
+    </h1>
+    <br/>
+    <h2 style="text-align:center">
+      Food List | Shopping List
+    </h2>
+  </body>
+</html>
